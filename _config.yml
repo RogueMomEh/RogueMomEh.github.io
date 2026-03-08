@@ -1,0 +1,33 @@
+title: 枫下小憩
+description: "记忆的碎片 · 不是因为世界对你温柔了，而是你撑过去了"
+url: "https://roguemomeh.github.io"
+lang: zh-CN
+
+author:
+  name: 枫下小憩
+  bio: 一个在加拿大生活了二十年的中国女人。枫叶之下，写下异乡的岁月。
+
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+
+paginate: 10
+paginate_path: "/page/:num/"
+
+permalink: /:year/:month/:title/
+
+collections:
+  posts:
+    output: true
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
