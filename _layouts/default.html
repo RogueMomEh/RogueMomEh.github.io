@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{% if page.title %}{{ page.title }} · {% endif %}{{ site.title }}</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@300;400;600&family=Cormorant+Garamond:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/main.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="container">
+    <a href="/" class="site-title">枫下小憩</a>
+    <p class="site-subtitle">The Far Shore · 记忆的碎片</p>
+    <p class="site-tagline">不是因为世界对你温柔了，而是你撑过去了</p>
+    <nav>
+      <a href="/">全部文章</a>
+      <a href="/category/亲情">亲情</a>
+      <a href="/category/情感">情感</a>
+      <a href="/category/历史记忆">历史记忆</a>
+      <a href="/category/生活随笔">生活随笔</a>
+    </nav>
+  </div>
+</header>
+<main class="container">
+  {{ content }}
+</main>
+<footer class="site-footer">
+  <div class="container">
+    <p>© 枫下小憩 · roguemomeh.github.io · 2007–{{ site.time | date: "%Y" }}</p>
+    <p>移民的价值，不过是多了一点人生的宽度</p>
+  </div>
+</footer>
+</body>
+</html>
